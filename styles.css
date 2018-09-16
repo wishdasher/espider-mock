@@ -10,7 +10,11 @@ ul {
 
 a {
 	text-decoration: none;
-	color: currentColor;
+	color: navy;
+}
+
+a:visited {
+	color: navy;
 }
 
 a:hover, a:focus {
@@ -35,6 +39,10 @@ button {
 	left: 0px;
 	right: 0px;
 	background-color: #2E8719;
+}
+
+#header-nav * {
+	color: white;
 }
 
 #nav-list {
@@ -80,7 +88,6 @@ button {
 .dropdown-list > li > * {
 	padding: 7px 15px;
 	display: block;
-	width: 100%;
 	text-align: left;
 }
 
