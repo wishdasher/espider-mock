@@ -1,0 +1,104 @@
+body {
+	font-family: "Lato", Arial;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+a:hover, a:focus {
+	opacity: 0.7;
+}
+
+.menu-button:hover, .menu-button:focus {
+	opacity: 0.7;
+}
+
+button {
+	border: none;
+	background: transparent;
+	color: currentColor;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+#header-nav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: #2E8719;
+}
+
+#nav-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	user-select: none;
+}
+
+#nav-list > li {
+	color: white;
+	border-left: 1px solid white;
+	margin: 0px;
+	display: inline-block;
+}
+
+#nav-list > li > *:not(ul) {
+	display: block;
+	padding: 15px 15px;
+}
+
+.dropdown-list {
+	position: absolute;
+	visibility: hidden;
+
+	white-space: nowrap;
+
+	opacity: 0;
+	transition: opacity 200ms ease-in-out;
+
+	display: flex;
+	flex-direction: column;
+	top: 50px;
+	right: 0px;
+	background-color: hotpink;
+}
+
+.dropdown-list > li {
+	margin: 0px;
+	border-bottom: 1px solid white;
+}
+
+.dropdown-list > li > * {
+	padding: 7px 15px;
+	display: block;
+	width: 100%;
+	text-align: left;
+}
+
+.dropdown-menu {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.dropdown-menu:hover .dropdown-list, .dropdown-menu:focus .dropdown-list {
+	opacity: 1;
+	visibility: visible;
+}
+
+#main {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 60px;
+}

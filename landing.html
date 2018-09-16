@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mock landing page</title>
+	<script src="account.js"></script>
+	<script type="text/javascript">
+
+	</script>
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<style>
+		.card-container {
+			width: 1000px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.card-container > a {
+			height: 100px;
+			width: 150px;
+			border: 1px solid grey;
+			margin: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+
+<body>
+	<nav id="header-nav">
+		<ul id="nav-list">
+			<li style="margin-left: 0px"><a href="landing.html">HOME LOGO</a></li>
+			<li style="margin: auto; margin-left: 0px"><span>LOGO</span></li>
+			<li id="programs" class="dropdown-menu" tabindex="0">
+				<span>Programs ▼</span>
+				<ul id ="program-list" class="dropdown-list">
+					<li><a href="program.html?name=splash">Splash</a></li>
+					<li><a href="program.html?name=spark">Spark</a></li>
+					<li><a href="program.html?name=spring">Spring HSSP</a></li>
+					<li><a href="program.html?name=summer">Summer HSSP</a></li>
+					<li><a href="program.html?name=cascade">Cascade</a></li>
+				</ul>
+
+			</li>
+			<li id="involved" class="dropdown-menu" tabindex="0">
+				<span>Get involved ▼</span>
+				<ul id ="roles" class="dropdown-list">
+					<li><a href="attend.html">Attend a program</a></li>
+					<li><a href="teach.html">Teach</a></li>
+					<li><a href="evangelize.html">Spread the word</a></li>
+					<li><a href="volunteer.html">Volunteer</a></li>
+					<li><a href="join.html">Join us</a></li>
+				</ul>
+
+			</li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="faq.html">FAQ | Contact</a></li>
+			<li id="login-item"><button id="login-button"  class="menu-button">Log in</button></li>
+
+			<li id="profile-item" class="dropdown-menu" tabindex="0">
+				<a href="#">🏠 Evan Tey ▼</a>
+				<ul id ="profile-list" class="dropdown-list">
+					<li><a href="#">My Dashboard</a></li>
+					<li><a href="#">Profile | Preferences</a></li>
+					<li><button id="logout-button" class="menu-button">Log out</button></li>
+				</ul>
+
+			</li>
+
+		</ul>
+	</nav>
+
+	<div id="main">
+		<h1>HI WE ARE ESP</h1>
+		<ul>
+			<li>we are a student group at MIT</li>
+			<li>we run programs and give people opportunity to teach, share interests blah</li>
+		</ul>
+		<h1>PROGRAMS</h1>
+		<div class="card-container">
+			<a href="program.html?name=splash">Splash</a>
+			<a href="program.html?name=spark">Spark</a>
+			<a href="program.html?name=spring">Spring HSSP</a>
+			<a href="program.html?name=summer">Summer HSSP</a>
+			<a href="program.html?name=cascade">Cascade</a>
+		</div>
+		<h2>Programs for MIT</h2>
+		<div class="card-container">
+			<a href="program.html?name=firestorm">REX: Firestorm</a>
+			<a href="program.html?name=sfmit">IAP: Splash for MIT</a>
+			<a href="program.html?name=firehose">CPW: Firehose</a>
+		</div>
+		<h1>HOW TO GET INVOLVED</h1>
+		<div class="card-container">
+			<a href="attend.html">Attend/Learn</a>
+			<a href="teach.html">Teach</a>
+			<a href="evangelize.html">Spread the word</a>
+			<a href="volunteer.html">Volunteer</a>
+			<a href="join.html">Join us!</a>
+
+		</div>
+		<h1>CONTACT</h1>
+		<p>email, phone?</p>
+
+	</div>
+</body>
+</html>
