@@ -61,7 +61,10 @@ button {
 
 #nav-list > li > *:not(ul) {
 	display: block;
-	padding: 15px 15px;
+	padding: 0px 15px;
+	height: 50px;
+	display: flex;
+	align-items: center;
 }
 
 .dropdown-list {
