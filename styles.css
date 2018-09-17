@@ -78,6 +78,7 @@ button {
 
 	display: flex;
 	flex-direction: column;
+	min-width: 100%;
 	top: 50px;
 	right: 0px;
 	background-color: hotpink;
@@ -92,6 +93,10 @@ button {
 	padding: 7px 15px;
 	display: block;
 	text-align: left;
+}
+
+.dropdown-list > li > button {
+	width: 100%;
 }
 
 .dropdown-menu {
